@@ -1,4 +1,4 @@
-# Laravel-unique-slug-generator
+# sulg-generator-laravel
 
 A simple but beautiful unique slug generator for Laravel eloquent model.
 

@@ -1,5 +1,5 @@
 {
-    "name": "amaz/laravelslug",
+    "name": "amaz/laravel-unique-slug",
     "description": "This is Simple slug generator",
     "license": "MIT",
     "autoload": {
