@@ -16,9 +16,9 @@ Service Provider Registration In config/app.php, add in providers array -
 
 ```sh
 'providers' => [
-    // ...
-    Akash\LaravelUniqueSlug\UniqueSlugServiceProvider::class,
-    // ...
+
+    Amaz\LaravelUniqueSlug\UniqueSlugServiceProvider::class,
+
 ],
 ```
 
@@ -27,7 +27,7 @@ Facade Class Alias Add in aliases array -
 ```sh
 'aliases' => Facade::defaultAliases()->merge([
     // ...
-    'UniqueSlug' => Akash\LaravelUniqueSlug\Facades\UniqueSlug::class,
+    'UniqueSlug' => Amaz\LaravelUniqueSlug\Facades\UniqueSlug::class,
     // ...
 ])->toArray(),
 ```
@@ -52,21 +52,17 @@ UniqueSlug::generate(App\Models\User::class, 'amaz', 'name');
 // After creating a new user with name akash-1, then again hit
 UniqueSlug::generate(App\Models\User::class, 'amaz', 'name');
 // amaz-2
+
+
+
+
 ```
-
-'providers' => [
-// ...
-Akash\LaravelUniqueSlug\UniqueSlugServiceProvider::class,
-// ...
-],```
-
-````
 
 #### Publish configuration
 
 ```sh
 php artisan vendor:publish amaz/laravel-unique-slug
-````
+```
 
 ## Contribution
 
