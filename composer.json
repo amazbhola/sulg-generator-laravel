@@ -7,6 +7,14 @@
             "Amaz\\LaravelSlug\\": "src/"
         }
     },
+    "keywords": [
+        "laravel_slug_generator",
+        "laravel_unique_slug",
+        "slug_generator",
+        "php Slug",
+        "laravel"
+    ],
+    "homepage": "https://github.com/amazbhola/sulg-generator-laravel.git",
     "authors": [
         {
             "name": "amazbhola",
