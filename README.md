@@ -10,6 +10,28 @@ A simple but beautiful unique slug generator for Laravel eloquent model.
 composer require amaz/laravel-unique-slug
 ```
 
+# Configaration
+
+Service Provider Registration In config/app.php, add in providers array -
+
+```sh
+'providers' => [
+    // ...
+    Akash\LaravelUniqueSlug\UniqueSlugServiceProvider::class,
+    // ...
+],
+```
+
+Facade Class Alias Add in aliases array -
+
+```sh
+'aliases' => Facade::defaultAliases()->merge([
+    // ...
+    'UniqueSlug' => Akash\LaravelUniqueSlug\Facades\UniqueSlug::class,
+    // ...
+])->toArray(),
+```
+
 ## Use from Controller
 
 #### Import first the UniqueSlug facade
@@ -32,11 +54,19 @@ UniqueSlug::generate(App\Models\User::class, 'amaz', 'name');
 // amaz-2
 ```
 
+'providers' => [
+// ...
+Akash\LaravelUniqueSlug\UniqueSlugServiceProvider::class,
+// ...
+],```
+
+````
+
 #### Publish configuration
 
 ```sh
 php artisan vendor:publish amaz/laravel-unique-slug
-```
+````
 
 ## Contribution
 
