@@ -1,0 +1,37 @@
+{
+    "name": "amaz/laravelslug",
+    "description": "This is Simple slug generator",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Amaz\\LaravelSlug\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "amazbhola",
+            "email": "amazingbhola@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+          "type": "path",
+          "url": "./laravel-slug-generator"
+        }
+      ],
+      "extra": {
+        "laravel": {
+            "providers": [
+                "Amaz\\LaravelSlug\\UniqueSlugServiceProvider"
+            ],
+            "aliases": {
+                "UniqueSlug": "Barryvdh\\Debugbar\\UniqueSlug"
+            }
+        }
+    },
+
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4"
+    }
+}
